@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="rootLayout" prefWidth="1100.0" prefHeight="750.0" xmlns:fx="http://javafx.com/fxml" fx:controller="blood.management.Mainpage" stylesheets="/styles/DarkTheme.css">
+   <left>
+      <VBox spacing="10" styleClass="sidebar" prefWidth="260.0">
+         <padding>
+            <Insets top="40" right="20" bottom="30" left="20"/>
+         </padding>
+         <Label text="BloodBridge" styleClass="sidebar-title" />
+         <Label text="Management System" styleClass="sidebar-subtitle" />
+         
+         <Region prefHeight="30.0" />
+
+         <Button fx:id="donor" text="🩸 Donor Management" onAction="#addDonor" styleClass="sidebar-btn" maxWidth="Infinity"/>
+         <Button fx:id="bloodRecipient" text="🏥 Blood Recipient" onAction="#setBloodRecipient" styleClass="sidebar-btn" maxWidth="Infinity"/>
+         <Button fx:id="doctor" text="👨‍⚕️ Doctor Details" onAction="#setDoctor" styleClass="sidebar-btn" maxWidth="Infinity"/>
+         <Button fx:id="staff" text="👨‍💼 Staff &amp; Employees" onAction="#setStaff" styleClass="sidebar-btn" maxWidth="Infinity"/>
+         <Button text="📦 Available Blood Inventory" onAction="#setAvailableScene" styleClass="sidebar-btn" maxWidth="Infinity"/>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="mainContent" styleClass="main-content" />
+   </center>
+</BorderPane>

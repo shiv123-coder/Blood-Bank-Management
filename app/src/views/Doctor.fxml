@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20" styleClass="form-pane" stylesheets="/styles/DarkTheme.css"
+   xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blood.management.Doctor">
+   
+    <Label text="Doctor Details" styleClass="form-header"/>
+    
+    <GridPane hgap="15" vgap="15" maxWidth="600">
+        <columnConstraints>
+            <ColumnConstraints minWidth="100"/>
+            <ColumnConstraints hgrow="ALWAYS" />
+        </columnConstraints>
+        
+        <Label text="Doctor Name" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="dName" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="0" promptText="Dr. First Last"/>
+        
+        <Label text="Contact" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="dContact" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="1" promptText="Phone Number"/>
+        
+        <Label text="Address" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="dAddress" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="2" promptText="Medical Center / Clinic Address"/>
+        
+        <HBox alignment="CENTER_RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Button fx:id="addBtn" text="Add Doctor" onAction="#addDoctor" styleClass="action-btn" />
+        </HBox>
+    </GridPane>
+    
+    <Separator />
+    
+    <TableView fx:id="dTableView" VBox.vgrow="ALWAYS" maxWidth="Infinity">
+        <contextMenu>
+            <ContextMenu>
+                <items>
+                    <MenuItem text="Delete Doctor" onAction="#mDeleteDoc" />
+                </items>
+            </ContextMenu>
+        </contextMenu>
+    </TableView>
+</VBox>

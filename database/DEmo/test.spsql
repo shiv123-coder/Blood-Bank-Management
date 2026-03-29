@@ -1,0 +1,38 @@
+-- Show all databases to check if SchoolDB exists
+SHOW DATABASES;
+
+-- Create a new database
+CREATE DATABASE IF NOT EXISTS SchoolDB;
+
+-- Use the newly created database
+USE SchoolDB;
+
+-- Create a table for students
+CREATE TABLE IF NOT EXISTS students (
+    student_id INT PRIMARY KEY,            -- Unique student identifier
+    FirstName VARCHAR(50),                 -- First name of the student
+    LastName VARCHAR(50),                  -- Last name of the student
+    Age INT,                               -- Age of the student
+    Grade VARCHAR(5)                       -- Grade of the student
+);
+
+-- Insert data into the Students table
+INSERT INTO students (student_id, FirstName, LastName, Age, Grade)
+VALUES
+    (1, 'John', 'Doe', 15, '10th'),
+    (2, 'Jane', 'Smith', 16, '11th'),
+    (3, 'Mike', 'Johnson', 14, '9th');
+
+-- Select all records from the Students table
+SELECT * FROM students;
+
+-- Select specific records (e.g., students who are in 10th grade)
+SELECT * FROM students WHERE Grade = '10th';
+
+-- Update a student's information (Change Age of student with student_id = 2)
+UPDATE students
+SET Age = 17
+WHERE student_id = 2;
+
+-- Delete a student record (Delete student with student_id = 3)
+DELETE FROM students WHERE student_id = 3;

@@ -1,0 +1,215 @@
+# IDE and Editor Files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+*~
+
+# Build and Output Directories
+app/build/
+app/dist/
+app/nbproject/private/
+app/out/
+target/
+bin/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Application Configuration and Secrets
+app/config.properties
+.env
+.env.*
+*.env
+secrets.properties
+application.properties
+application-*.properties
+
+# Logs and Temporary Files
+*.log
+*.log.*
+logs/
+log/
+tmp/
+temp/
+*.tmp
+*.temp
+*.pid
+*.seed
+*.pid.lock
+
+# Cache and Performance Files
+.cache/
+.vite/
+.next/
+.nuxt/
+.parcel-cache/
+.turbo/
+.node_repl_history/
+*.lcov
+coverage/
+.nyc_output/
+.coverage/
+.grunt/
+.bower/
+.sass-cache/
+.eslintcache
+.stylelintcache
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Database Files
+database/data/
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+database/*.mdb
+database/*.accdb
+
+# Package Managers and Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Java Specific
+*.class
+*.log
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+
+# Java Build Tools
+.mvn/
+!**/src/main/**/!mvn/wrapper/maven-wrapper.jar
+!**/.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ IDEA
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Large Generated Files
+*.iso
+*.dmg
+*.pkg
+*.deb
+*.rpm
+*.msi
+*.exe
+*.app
+
+# Backup and Version Files
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+~*
+
+# Testing
+test-results/
+test-output/
+*.tests
+
+# Documentation Build
+docs/_build/
+site/
+
+# Security and Keys
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+*.keystore
+id_rsa
+id_rsa.pub
+*.pem
+
+# Local Configuration
+local.properties
+local.json
+config.local.*
+
+# Runtime Data
+*.pid
+*.seed
+*.pid.lock
+
+# Optional IDE files (uncomment if you use them)
+# .project
+# .classpath
+# .cproject/
+# .settings/
+
+# Optional Maven IDE files (uncomment if you use them)
+# .factorypath
+# .springBeans
+
+# Optional Gradle files (uncomment if you use them)
+# .gradle/
+# gradlew
+# gradlew.bat

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20" styleClass="form-pane" stylesheets="/styles/DarkTheme.css"
+   xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blood.management.bloodRecieversence">
+   
+    <Label text="Blood Recipient Registration" styleClass="form-header"/>
+    
+    <GridPane hgap="20" vgap="15">
+        <columnConstraints>
+            <ColumnConstraints minWidth="100" halignment="RIGHT"/>
+            <ColumnConstraints hgrow="ALWAYS" minWidth="200" maxWidth="300" />
+            <ColumnConstraints minWidth="120" halignment="RIGHT"/>
+            <ColumnConstraints hgrow="ALWAYS" minWidth="200" maxWidth="300"/>
+        </columnConstraints>
+        
+        <!-- Left Column -->
+        <Label text="Date" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <DatePicker fx:id="rDate" styleClass="date-picker" promptText="Select Date" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        
+        <Label text="Recipient Name" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="rName" styleClass="text-field" promptText="Full Name" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        
+        <Label text="Blood Group" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <ComboBox fx:id="rGroup" styleClass="combo-box" promptText="Choose Group" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        
+        <Label text="Amount Charged" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <TextField fx:id="rAmount" styleClass="text-field" promptText="Amount (e.g. 50.00)" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        
+        <Label text="Quantity (Ltr)" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <TextField fx:id="rQty" styleClass="text-field" promptText="0.0" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+        
+        <!-- Right Column -->
+        <Label text="Gender" styleClass="form-label" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+        <ComboBox fx:id="rGender" styleClass="combo-box" promptText="Select Gender" maxWidth="Infinity" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+        
+        <Label text="Contact" styleClass="form-label" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <TextField fx:id="rContact" styleClass="text-field" promptText="Phone Number" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+        
+        <Label text="Prescribing Doctor" styleClass="form-label" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+        <TextField fx:id="rDoctor" styleClass="text-field" promptText="Dr. Name" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+        
+        <Label text="Employee ID" styleClass="form-label" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+        <ComboBox fx:id="rEid" styleClass="combo-box" promptText="Assisting Staff EID" maxWidth="Infinity" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+        
+        <!-- Submit Button -->
+        <HBox alignment="CENTER_RIGHT" GridPane.columnIndex="3" GridPane.rowIndex="4" spacing="10">
+            <Button fx:id="addBtn" text="Add Record" onAction="#addReciever" styleClass="action-btn" />
+        </HBox>
+    </GridPane>
+    
+    <Separator />
+    
+    <TableView fx:id="rTableView" VBox.vgrow="ALWAYS" maxWidth="Infinity">
+        <contextMenu>
+            <ContextMenu>
+                <items>
+                    <MenuItem text="Delete Record" onAction="#mDeleteRecord" />
+                </items>
+            </ContextMenu>
+        </contextMenu>
+    </TableView>
+</VBox>

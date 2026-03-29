@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20" styleClass="form-pane" stylesheets="/styles/DarkTheme.css"
+   xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blood.management.EmployeeController">
+   
+    <Label text="Staff &amp; Employees" styleClass="form-header"/>
+    
+    <GridPane hgap="15" vgap="15" maxWidth="600">
+        <columnConstraints>
+            <ColumnConstraints minWidth="100"/>
+            <ColumnConstraints hgrow="ALWAYS" />
+        </columnConstraints>
+        
+        <Label text="Employee ID" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="eId" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="0" promptText="EID"/>
+        
+        <Label text="Full Name" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="eName" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="1" promptText="Enter name"/>
+        
+        <Label text="Contact" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="eContact" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="2" promptText="Phone Number"/>
+        
+        <HBox alignment="CENTER_RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Button fx:id="addBtn" text="Add Employee" onAction="#addEmployee" styleClass="action-btn" />
+        </HBox>
+    </GridPane>
+    
+    <Separator />
+    
+    <TableView fx:id="eTableView" VBox.vgrow="ALWAYS" maxWidth="Infinity">
+        <contextMenu>
+            <ContextMenu>
+                <items>
+                    <MenuItem text="Delete Employee" onAction="#DeleteEmployee" />
+                </items>
+            </ContextMenu>
+        </contextMenu>
+    </TableView>
+</VBox>
