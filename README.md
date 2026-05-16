@@ -27,7 +27,12 @@
 <h2>🏗️ System Architecture</h2>
 
 <p align="center">
-  <img src="assets/images/architecture_flow_1777823205962.png" alt="System Architecture Diagram" width="900">
+  <img
+    src="assets/images/architecture_flow_1777823205962.png"
+    alt="System Architecture Diagram"
+    width="100%"
+    style="max-width: 900px; border-radius: 12px;"
+  />
 </p>
 
 <hr>
@@ -66,7 +71,12 @@
 <h2>🔄 API / Application Flow</h2>
 
 <p align="center">
-  <img src="assets/images/api_flow_1777823228029.png" alt="Application Flow Diagram" width="900">
+  <img
+    src="assets/images/api_flow_1777823228029.png"
+    alt="Application Flow Diagram"
+    width="100%"
+    style="max-width: 900px; border-radius: 12px;"
+  />
 </p>
 
 <hr>
@@ -74,7 +84,12 @@
 <h2>🗄️ Database Schema</h2>
 
 <p align="center">
-  <img src="assets/images/database_schema_1777823243514.png" alt="Database Schema Diagram" width="900">
+  <img
+    src="assets/images/database_schema_1777823243514.png"
+    alt="Database Schema Diagram"
+    width="100%"
+    style="max-width: 900px; border-radius: 12px;"
+  />
 </p>
 
 <hr>
