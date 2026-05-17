@@ -162,27 +162,7 @@ java -cp ".;out;lib/*" blood.management.BloodManagement</code></pre>
   <li>Never commit admin credentials, private keys, public keys, PDFs, DOCX files, or local config files.</li>
 </ul>
 
-<h3>Recommended <code>.gitignore</code></h3>
 
-<pre><code class="language-gitignore">config.properties
-.env
-.env.*
-*.key
-*.pem
-*.p12
-*.jks
-*.pdf
-*.docx
-*.doc
-*.xlsx
-*.xls
-out/
-target/
-bin/
-*.class
-.idea/
-.vscode/
-.DS_Store</code></pre>
 
 <hr>
 
