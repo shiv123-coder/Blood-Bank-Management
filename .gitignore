@@ -27,7 +27,6 @@ bin/
 # Application Configuration and Secrets
 app/config.properties
 .env
-.env.*
 *.env
 secrets.properties
 application.properties
@@ -213,3 +212,6 @@ config.local.*
 # .gradle/
 # gradlew
 # gradlew.bat
+
+
+engineering_blueprint.md
