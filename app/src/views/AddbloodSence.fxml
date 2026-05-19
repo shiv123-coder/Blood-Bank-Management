@@ -46,7 +46,7 @@
             <padding>
                 <javafx.geometry.Insets top="10" />
             </padding>
-            <Button fx:id="dnor" text="Register Blood" onAction="#addDonor" styleClass="action-btn" />
+            <Button fx:id="addBtn" text="Register Blood" onAction="#addDonor" styleClass="action-btn" />
         </HBox>
     </GridPane>
     
